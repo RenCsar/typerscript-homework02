@@ -1,0 +1,40 @@
+.container {
+    background-color: var(--marrom-escuro);
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+}
+
+h1 {
+    color: var(--branco);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.btnContainer{
+    display: flex;
+    gap: 10px;
+}
+
+.btnContainer button {
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: var(--branco);
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container p {
+    margin-top: 25px;
+    color: var(--branco);
+    font-weight: bold;
+}
