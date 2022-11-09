@@ -9,15 +9,15 @@ const schema: any = yup.object({
     content: yup.string().required()
 }).required();
 
-interface Props {
-    errors?:boolean;
-    content?: any;
-    message?: any
-}
+type FormValues = {
+    name: string;
+    email: string;
+    content: string;
+  };
 
-export default function Opiniao(props: Props){
+export default function Opiniao(){
     const { register, handleSubmit, formState: {errors}} =
-    useForm<any>({
+    useForm<FormValues>({
       resolver: yupResolver(schema)  
     });    
 
@@ -32,17 +32,17 @@ export default function Opiniao(props: Props){
                     <div className={styles.field}>
                         <label className={styles.label}>Nome</label>
                         <input type="text" {...register('name')}/>  
-                        {/* <span>{errors.name?.message}</span> */}
+                        <span>{errors.name?.message}</span>
                     </div>
                     <div className={styles.field}>
                         <label className={styles.label}>Email</label>
                         <input type="email"{...register('email')}/>  
-                        {/* <span>{errors.email?.message}</span> */}
+                        <span>{errors.email?.message}</span>
                     </div>
                     <div className={styles.field}>
                         <label className={styles.label}>Conteúdo</label>
                         <input type="text" {...register('content')}/>  
-                        {/* <span>{errors.content?.message}</span> */}
+                        <span>{errors.content?.message}</span>
                     </div>
                     <button type="submit">Enviar</button>
                 </form> 

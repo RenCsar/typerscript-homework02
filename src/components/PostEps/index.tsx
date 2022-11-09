@@ -42,25 +42,25 @@ export default function PostEps(){
         },
         {
             titulo: "The Walking Dead 11ª Temporada",
-            ep: "Episódios 15",
+            ep: "Episódios 11",
             resumo: 'Todas as informações do 15º episódio da 11ª temporada de The Walking Dead: "Lockdown" e do 18º episódio da 11ª temporada de The Walking Dead: "A New Deal". Dê sua nota para estes episódios e comente com outros fãs!',
             imagem:`../assets/eps/7/ep.jpg`
         },
         {
             titulo: "The Walking Dead 11ª Temporada",
-            ep: "Episódios 14",
+            ep: "Episódios 10",
             resumo: 'Todas as informações do 14º episódio da 11ª temporada de The Walking Dead: "Lockdown" e do 18º episódio da 11ª temporada de The Walking Dead: "A New Deal". Dê sua nota para estes episódios e comente com outros fãs!',
             imagem:`../assets/eps/8/ep.jpg`
         },
         {
             titulo: "The Walking Dead 11ª Temporada",
-            ep: "Episódios 13",
+            ep: "Episódios 9",
             resumo: 'Todas as informações do 13º episódio da 11ª temporada de The Walking Dead: "Lockdown" e do 18º episódio da 11ª temporada de The Walking Dead: "A New Deal". Dê sua nota para estes episódios e comente com outros fãs!',
             imagem:`../assets/eps/9/ep.jpg`
         },
         {
             titulo: "The Walking Dead 11ª Temporada",
-            ep: "Episódios 12",
+            ep: "Episódios 8",
             resumo: 'Todas as informações do 12º episódio da 11ª temporada de The Walking Dead: "Lockdown" e do 18º episódio da 11ª temporada de The Walking Dead: "A New Deal". Dê sua nota para estes episódios e comente com outros fãs!',
             imagem:`../assets/eps/1/ep.jpg`
         },
@@ -72,7 +72,7 @@ export default function PostEps(){
         <>
             <div className={styles.postagensGeral}>
                     {postagens.map(post => (
-                        <div className={styles.container}>
+                        <div className={styles.container} key={post.ep}>
                             <div className={styles.imgContainer}>
                                 <img src={`${post.imagem}`} alt="" />
                             </div>
