@@ -1,7 +1,8 @@
 .container {
     background-color: var(--marrom-escuro);
-    width: 300px;
-    height: 300px;
+    color: var(--branco);
+    width: 350px;
+    height: 450px;
     padding: 50px;
     border-radius: 5px;
     display: flex;
@@ -13,7 +14,6 @@
 }
 
 h1 {
-    color: var(--branco);
     font-size: 20px;
     margin-bottom: 15px;
 }
@@ -37,4 +37,11 @@ h1 {
     margin-top: 25px;
     color: var(--branco);
     font-weight: bold;
+}
+
+.container ul {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
 }

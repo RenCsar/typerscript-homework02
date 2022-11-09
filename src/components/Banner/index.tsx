@@ -9,7 +9,7 @@ export default function Banner(){
                 <div className={styles.apresentacao}>
                     <h1 className={styles.titulo}>The Walking Dead</h1>
                      <p className={styles.paragrafo}>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis ea voluptates maxime dignissimos laboriosam exercitationem doloribus vitae, repudiandae atque voluptate, provident distinctio nisi iusto ipsam. Odit hic doloribus ipsam veritatis.
+                     The Walking Dead conta a história de um grupo de sobreviventes, liderados pelo xerife Rick Grimes, após um apocalipse zumbi. Toda a população da Terra é infectada por um vírus misterioso que transforma os mortos em zumbis.
                     </p>
                 </div>
                 <div className={styles.imagens}></div>

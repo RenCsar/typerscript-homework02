@@ -6,7 +6,7 @@ export default function Resenha() {
     return (
         <>
             <div className={styles.geral}>
-                 <PostEps />
+                <PostEps />
                 <SelecionarGrupo />                
             </div>
         </>

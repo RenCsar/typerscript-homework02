@@ -1,6 +1,6 @@
-geral {
+.geral {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 50px;
     margin: 50px 0px;
 }

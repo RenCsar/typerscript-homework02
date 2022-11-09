@@ -23,7 +23,7 @@
 }
 
 .imgContainer {
-    width: 30%;
+    width: 50%;
     height: 100%;
     border-radius: 5px;
     display: flex;
@@ -39,7 +39,7 @@
 }
 
 .conteudoContainer {    
-    width: 70%;
+    width: 50%;
     height: 100%;
     padding: 10px 25px;
     border-radius: 5px;

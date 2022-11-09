@@ -24,9 +24,10 @@ export default function Opiniao(props: Props){
     const onSubmitForm = ({data}:any) => console.log(data);
 
     return(
-        <>
-            <h1>Deixe sua Opinião sobre a série</h1>
+        <div className={styles.containerGeral}>
+            
             <div className={styles.formu}>
+            <h1>Deixe sua Opinião sobre a série</h1>
                 <form onSubmit={handleSubmit(onSubmitForm)}>
                     <div className={styles.field}>
                         <label className={styles.label}>Nome</label>
@@ -47,6 +48,6 @@ export default function Opiniao(props: Props){
                 </form> 
             </div>
             
-        </>
+        </div>
     );
 }

@@ -2,22 +2,26 @@ import { useState } from "react"
 import styles from './SelecionarGrupo.module.css';
 
 export default function SelecionarGrupo(){
-    const [listaPersonagens, setListaPersonagens] = useState<string[] | string>(`Qual grupo quer ver?`);
+    const [listaPersonagens, setListaPersonagens] = useState<string[]>([]);
    
-    let hilltop:string[] = ['Mege', ' Tara ', 'Gregory '];
-    let alexandria:string[] = ['Rick Grimes', ' Aaron', ' Michonne'];
-    let reino:string[] = ['Ezekiel', ' Carol', ' Morgan'];
+    let hilltop:string[] = ['Mege', ' Tara ', 'Gregory ', 'Dante', 'Hershel Greene Jr.', 'Dr. Harlan Carson'];
+    let alexandria:string[] = ['Rick Grimes', 'Aaron', 'Michonne', 'Aaron', 'Gabriel Stokes', 'Laura'];
+    let reino:string[] = ['Ezekiel', 'Carol', 'Morgan', 'Jenny', 'Richard'];
 
     return(
         <>
             <div className={styles.container}>
                 <h1>Selecione um Grupo</h1>
                 <div className={styles.btnContainer}>
-                    <button onClick={()=> setListaPersonagens(`Os membros de Hilltop são: ${[hilltop]}.`)}>Hilltop</button>
-                    <button onClick={()=> setListaPersonagens(`Os membros de Alexandria são: ${[alexandria]}.`)}>Alexandria</button>
-                    <button onClick={()=> setListaPersonagens(()=>`Os membros do Reino são: ${[reino]}.`)}>Reino</button>
+                    <button onClick={()=> setListaPersonagens(hilltop)}>Hilltop</button>
+                    <button onClick={()=> setListaPersonagens(alexandria)}>Alexandria</button>
+                    <button onClick={()=> setListaPersonagens(reino)}>Reino</button>
                 </div>
-                <p>{listaPersonagens}</p>
+                <ul>                    
+                    {listaPersonagens.map((personagem, index)=>{
+                            return <li key={index}>{personagem}</li>
+                        })}
+                </ul>
             </div>
         </>
     )

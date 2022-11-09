@@ -6,6 +6,10 @@
     padding-bottom: 1.5rem;
     transition: transform .2s;
 }
+
+.post img {
+    height: 400px;
+}
  
 .post:hover {
     transform: translate(0, -2rem);
